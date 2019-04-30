@@ -14,11 +14,8 @@ const FileController = require('./app/controllers/FileController')
 
 // Conf. global para que todas as views saibam das mensagens
 routes.use((req, res, next) => {
-  // console.log(JSON.stringify(res.locals))
   res.locals.flashSuccess = req.flash('success')
   res.locals.flashError = req.flash('error')
-  // console.log(JSON.stringify(res.locals))
-  // console.log('saiu')
   return next()
 })
 
