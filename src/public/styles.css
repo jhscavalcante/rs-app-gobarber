@@ -163,7 +163,41 @@ body {
   color: #fff;
 }
 
-.main-wrapper .content a.logout:hover {
+a.btn-menu-logout {
+  background: #de6d6d;
+  text-decoration: none;
+  height: 40px;
+  width: 49%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+  color: #fff;
+}
+
+a.btn-menu {
+  background: #3e87a2;
+  text-decoration: none;
+  height: 40px;
+  width: 49%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+  color: #fff;
+}
+
+a.btn-menu:hover {
+  background: #29596b;
+}
+
+.main-wrapper .content a.logout:hover, a.btn-menu-logout:hover {
   background: #c15858;
 }
 

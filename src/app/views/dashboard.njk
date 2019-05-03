@@ -2,6 +2,7 @@
 
 {% block body %}
 <div class="content">
+
   <strong>Olá, {{ user.name }} </strong>
   <p>Inicie um agendamento escolhendo um profissional abaixo:</p>
 
@@ -17,7 +18,20 @@
     {% endfor%}
   </ul>
 
-  <a href="app/logout" class="logout">Sair</a>
+  {% if (user.provider === true) %}
+    <div>
+      <tr>
+        <td>
+          <a href="/app/schedule" class="btn-menu">Agenda do dia</a>
+        </td>
+        <td>
+          <a href="/app/logout" class="btn-menu-logout">Sair</a>
+        </td>
+      </tr>
+    </div>
+  {% else %}
+    <a href="/app/logout" class="logout">Sair</a>
+  {% endif %}
 </div>
 
 {% endblock %}

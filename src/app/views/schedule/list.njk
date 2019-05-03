@@ -1,0 +1,10 @@
+{% for appointment in appointments %}
+
+<label>  
+  <img src="/files/{{ appointment.user.avatar }}" height="50"/> &nbsp;
+  <strong> <label> {{ appointment.date | date("HH:mm") }} </label> {{ appointment.user.name }} </strong>
+</label>
+
+{% endfor %}
+
+
